@@ -3,15 +3,15 @@
  Setup you private Azure creds before running the script :
 
 ```
-subscription_id 	= "......."
-client_id 		= "......."
-client_secret 	= "......."
-tenant_id 		= "......."
+subscription_id 	= "---"
+client_id 		    = "---"
+client_secret 	  = "---"
+tenant_id 		    = "---"
 ```
 
 ##### Steps to initialize this project
 - Enter all the variables in variable file (terraform.tfvars)
-- Add storage account , container name , Access Key at the end of  azure_vm.tf file for storing terraform state file remotely to azure
+- Add storage account , container name , Access Key at the end of  azure_vm.tf file for storing terraform state file remotely to azure (you need to have a already created storage account for storing the state file )
 
 Run following commands to run & test Terraform scripts :
 
