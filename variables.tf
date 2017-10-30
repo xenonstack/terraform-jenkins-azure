@@ -29,7 +29,3 @@ variable "storage_account_name" {}
 variable "container_name" { default = "vhds" }
 variable "vm_name" { default = "Jenkins_VM" }
 variable "os_name" { default = "Ubuntu_Jenkins" }
-
-variable "remote_state_storage" { description = "Name of azure storage account where we will store our state files" }
-variable "remote_state_container" { description = "Name of azure container name name where we will store our state files" }
-variable "azure_access_key"  { description = "Generate the key from your storage container" }
