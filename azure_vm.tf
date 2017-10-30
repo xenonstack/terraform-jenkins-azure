@@ -46,7 +46,7 @@ resource "azurerm_virtual_machine_extension" "jenkins_terraform" {
 
   settings = <<SETTINGS
   {
-          "fileUris": [""],
+          "fileUris": ["https://raw.githubusercontent.com/xenonstack/terraform-jenkins-azure/master/jenkins-init.sh"],
           "commandToExecute": "sh jenkins-init.sh"
       }
 SETTINGS
